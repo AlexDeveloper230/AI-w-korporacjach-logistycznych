@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <title>System Szkoleniowy AI — Zadania (WBS)</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+  </head>
+
+  <body class="is-preload">
+    <!-- Header -->
+    <header id="header">
+      <a href="index.html" class="title">System Szkoleniowy AI by A42</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Strona główna</a></li>
+          <li><a href="background.html">Tło biznesowe</a></li>
+          <li><a href="stakeholders.html">Interesariusze</a></li>
+          <li><a href="outline.html">Zarys projektu</a></li>
+          <li>
+            <a href="tasks.html" class="active">Zadania projektu i WBS</a>
+          </li>
+          <li><a href="gantt.html">Wykres Gantt WBS</a></li>
+          <li><a href="goals.html">Cele strategiczne</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Main -->
+      <section id="main" class="wrapper">
+        <div class="inner">
+          <h1 class="major">Zadania główne i podzadania (WBS)</h1>
+
+          <span class="image fit">
+            <img
+              src="images/pic02.jpg"
+              style="height: 299px"
+              alt="WBS — System Szkoleniowy AI"
+            />
+          </span>
+
+          <h2>Instrukcja użycia</h2>
+          <p>
+            Poniższy WBS (Work Breakdown Structure) mapuje zadania główne i
+            podzadania zgodne z celami strategicznym, taktycznymi oraz
+            operacyjnymi projektu. Każde zadanie zawiera krótki opis, przypisane
+            role, oczekiwany rezultat oraz przykładowe KPI / czas realizacji.
+          </p>
+
+          <hr />
+
+          <h2>1. Governance & Compliance (Zarządzanie projektem i zgodność)</h2>
+          <ol>
+            <li>
+              <strong
+                >1.1 Ustanowienie łańcucha odpowiedzialności (RACI)</strong
+              >
+              <ul>
+                <li>
+                  Opis: Zdefiniować RACI dla wszystkich obszarów projektu.
+                </li>
+                <li>
+                  Role: Project Manager (A42) — R, Product Owner — A, HR/Legal —
+                  C.
+                </li>
+                <li>Rezultat: Macierz RACI zatwierdzona przez sponsorów.</li>
+                <li>KPI / Czas: 1 tydzień; dokument zatwierdzony.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>1.2 Plan jakości i zgodności (ISO / RODO)</strong>
+              <ul>
+                <li>
+                  Opis: Opracować plan jakości, politykę wersjonowania i audytu.
+                </li>
+                <li>Role: Quality Lead — R, IT Security — C, Legal — C.</li>
+                <li>
+                  Rezultat: Plan jakości, procedury audytu, checklisty
+                  zgodności.
+                </li>
+                <li>KPI / Czas: 2 tygodnie; lista kontrolna zgodności.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>1.3 Zarządzanie ryzykiem</strong>
+              <ul>
+                <li>
+                  Opis: Stworzyć rejestr ryzyk z oceną i planami mitigacji
+                  (FMEA).
+                </li>
+                <li>Role: Risk Manager — R, PM — A, eksperci branżowi — C.</li>
+                <li>Rezultat: Risk Register z priorytetami i właścicielami.</li>
+                <li>
+                  KPI / Czas: 1 tydzień (inicjalizacja), ciągła aktualizacja.
+                </li>
+              </ul>
+            </li>
+          </ol>
+
+          <hr />
+
+          <h2>2. Content & AI (Tworzenie treści i silnik AI)</h2>
+          <ol>
+            <li>
+              <strong>2.1 Analiza SOP i przygotowanie korpusu wiedzy</strong>
+              <ul>
+                <li>
+                  Opis: Zebrać i ustrukturyzować procedury operacyjne (SOP).
+                </li>
+                <li>Role: Process SME / Trenerzy — R, Data Engineer — C.</li>
+                <li>
+                  Rezultat: Ustrukturyzowany repozytorium SOP (format
+                  JSON/Markdown).
+                </li>
+                <li>
+                  KPI / Czas: 2–3 tygodnie; 10 kluczowych SOP w repozytorium.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>2.2 PoC AI Content Engine</strong>
+              <ul>
+                <li>
+                  Opis: Uruchomienie prototypu generującego skrypt +
+                  transkrypcję dla 1 modułu.
+                </li>
+                <li>Role: ML Engineer — R, Metodyk — C, PM — A.</li>
+                <li>Rezultat: PoC: skrypt wideo, napisy, quiz autocreated.</li>
+                <li>KPI / Czas: 2 tygodnie; akceptacja Trainer Review.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>2.3 Walidacja treści i reguły jakości</strong>
+              <ul>
+                <li>
+                  Opis: Definiowanie rulesetów dla poprawności merytorycznej i
+                  językowej.
+                </li>
+                <li>
+                  Role: Metodyk — R, Trener — A, Linguist/Proofreader — C.
+                </li>
+                <li>
+                  Rezultat: Zestaw reguł walidacyjnych, przepływ akceptacji.
+                </li>
+                <li>KPI / Czas: 1 tydzień; % automatycznych akceptacji.</li>
+              </ul>
+            </li>
+          </ol>
+
+          <hr />
+
+          <h2>3. Platforma & Integracje (LMS, HR, SSO, Storage)</h2>
+          <ol>
+            <li>
+              <strong>3.1 Wybór i konfiguracja LMS</strong>
+              <ul>
+                <li>
+                  Opis: Wybrać LMS wspierający API, SCORM/xAPI i śledzenie KPI.
+                </li>
+                <li>Role: IT Architect — R, PM — A, HR — C.</li>
+                <li>Rezultat: Działający LMS z kontami testowymi.</li>
+                <li>KPI / Czas: 2 tygodnie; integracja podstawowa.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>3.2 Integracja HR (SCIM) i SSO</strong>
+              <ul>
+                <li>
+                  Opis: Synchronizacja ról i użytkowników; jednokrotne
+                  logowanie.
+                </li>
+                <li>Role: IT — R, HR — C, Security — C.</li>
+                <li>
+                  Rezultat: Automatyczne przypisania szkoleniowe wg stanowisk.
+                </li>
+                <li>KPI / Czas: 1–2 tygodnie; testy provisioning.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>3.3 Magazyn plików i backup</strong>
+              <ul>
+                <li>
+                  Opis: Zapewnienie wersjonowanego storage (S3/Blob) z audytem.
+                </li>
+                <li>Role: DevOps — R, IT Security — C.</li>
+                <li>Rezultat: Polityka przechowywania, kopie, retention.</li>
+                <li>KPI / Czas: 1 tydzień; SLA backupów.</li>
+              </ul>
+            </li>
+          </ol>
+
+          <hr />
+
+          <h2>4. Pilotaż & Rollout</h2>
+          <ol>
+            <li>
+              <strong>4.1 Plan pilotażu</strong>
+              <ul>
+                <li>
+                  Opis: Wybrać 1–2 działy do pilotażu (np. przyjęcie towaru,
+                  kompletacja).
+                </li>
+                <li>Role: PM — R, Ops Lead — A, Trenerzy — C.</li>
+                <li>Rezultat: Harmonogram pilotażu, kryteria sukcesu.</li>
+                <li>
+                  KPI / Czas: 1 tydzień przygotowanie, 4 tygodnie pilotaż.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>4.2 Testy użyteczności i adopcji</strong>
+              <ul>
+                <li>
+                  Opis: Zbierać feedback, mierzyć ukończenia, czas do
+                  kompetencji.
+                </li>
+                <li>Role: UX/Research — R, PM — A.</li>
+                <li>Rezultat: Raport UX z rekomendacjami zmian.</li>
+                <li>KPI / Czas: ciągłe w trakcie pilotażu.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>4.3 Rollout etapowy</strong>
+              <ul>
+                <li>
+                  Opis: Wdrożenie w kolejnych lokalizacjach zgodnie z
+                  gotowością.
+                </li>
+                <li>Role: PM — R, Regional Leads — A.</li>
+                <li>Rezultat: Plan rollout, monitorowane KPI.</li>
+                <li>KPI / Czas: etapowy, zależny od skali.</li>
+              </ul>
+            </li>
+          </ol>
+
+          <hr />
+
+          <h2>5. Analytics & Continuous Improvement</h2>
+          <ol>
+            <li>
+              <strong>5.1 Dashboard KPI</strong>
+              <ul>
+                <li>
+                  Opis: Zbudować dashboard z KPI: czas produkcji, ukończenia,
+                  NPS, ROI.
+                </li>
+                <li>Role: Data Analyst — R, PM — A.</li>
+                <li>Rezultat: Dashboard dostępny dla zarządu i operacji.</li>
+                <li>KPI / Czas: 2 tygodnie do MVP.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>5.2 Mechanizmy odświeżania treści</strong>
+              <ul>
+                <li>
+                  Opis: Automatyczne alarmy o konieczności aktualizacji treści
+                  (expiry alerts).
+                </li>
+                <li>Role: Dev — R, Metodyk — C.</li>
+                <li>
+                  Rezultat: Automatyczne przypomnienia, workflow aktualizacji.
+                </li>
+                <li>KPI / Czas: 1 tydzień konfiguracja.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>5.3 Iteracje jakościowe (PDCA)</strong>
+              <ul>
+                <li>
+                  Opis: Cykl PDCA dla modułów: pomiar → analiza → korekta →
+                  standaryzacja.
+                </li>
+                <li>Role: Quality Lead — R, Trenerzy — C.</li>
+                <li>
+                  Rezultat: Zmniejszanie wskaźników błędów, optymalizacja
+                  treści.
+                </li>
+                <li>KPI / Czas: ciągłe, sprinty 2-4 tygodniowe.</li>
+              </ul>
+            </li>
+          </ol>
+
+          <hr />
+
+          <h2>6. Change Management & Training (Zarządzanie zmianą)</h2>
+          <ol>
+            <li>
+              <strong>6.1 Program onboardingu trenerów</strong>
+              <ul>
+                <li>
+                  Opis: Szkolenia „train the trainer” + materiały referencyjne.
+                </li>
+                <li>Role: Learning Lead — R, HR — C.</li>
+                <li>Rezultat: Certyfikowani trenerzy, materiały e-learning.</li>
+                <li>
+                  KPI / Czas: 2 tygodnie program, 1 dzień szkolenia/uczestnik.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>6.2 Komunikacja wewnętrzna</strong>
+              <ul>
+                <li>Opis: Kampania informacyjna, FAQ, kanały wsparcia.</li>
+                <li>Role: PM — R, Comm Lead — A.</li>
+                <li>Rezultat: Plan komunikacji i repo z materiałami.</li>
+                <li>
+                  KPI / Czas: 1 tydzień przygotowanie, ciągła komunikacja.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>6.3 Metryki adopcji i wsparcie</strong>
+              <ul>
+                <li>
+                  Opis: Monitorować adopcję, SLA wsparcia, helpdesk dla
+                  trenerów.
+                </li>
+                <li>Role: Support — R, PM — A.</li>
+                <li>Rezultat: SLA, mierniki adopcji, raporty miesięczne.</li>
+                <li>KPI / Czas: zestaw KPI miesiąc po wdrożeniu.</li>
+              </ul>
+            </li>
+          </ol>
+
+          <hr />
+
+          <h2>Mapowanie celów → zadań (skrót)</h2>
+          <table style="width: 100%; border-collapse: collapse">
+            <thead>
+              <tr style="border-bottom: 2px solid #ccc">
+                <th style="padding: 6px">Cel</th>
+                <th style="padding: 6px">Główne zadania</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding: 6px">
+                  Cel strategiczny: skrócenie czasu produkcji o ≥70%
+                </td>
+                <td style="padding: 6px">
+                  2.1 Analiza SOP, 2.2 PoC AI, 5.1 Dashboard KPI
+                </td>
+              </tr>
+              <tr>
+                <td style="padding: 6px">
+                  Cel taktyczny: standaryzacja treści
+                </td>
+                <td style="padding: 6px">
+                  1.2 Plan jakości, 2.3 Reguły walidacji, 6.1 Onboarding
+                  trenerów
+                </td>
+              </tr>
+              <tr>
+                <td style="padding: 6px">
+                  Cel operacyjny: 3 moduły pilotażowe
+                </td>
+                <td style="padding: 6px">
+                  2.2 PoC, 4.1 Plan pilotażu, 4.2 Testy adopcji
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <hr />
+
+          <p class="small">
+            Uwaga: Czas realizacji i KPI są orientacyjne; precyzyjne wartości
+            zależą od zasobów, dostępności ekspertów i integracji z systemami
+            klienta.
+          </p>
+
+          <a href="index.html#three" class="button">Skontaktuj się z nami</a>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="wrapper alt">
+      <div class="inner">
+        <ul class="menu">
+          <li>&copy; System Szkoleniowy AI — Wszystkie prawa zastrzeżone</li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Gantt — System Szkoleniowy AI (WBS)</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+    <style>
+      /* Proste dostosowania wyglądu podstrony Gantt */
+      .gantt-page {
+        max-width: 1120px;
+        margin: 32px auto;
+        padding: 24px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 6px 22px rgba(10, 20, 40, 0.04);
+      }
+      .gantt-header {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        margin-bottom: 18px;
+      }
+      .gantt-title {
+        font-size: 20px;
+        font-weight: 600;
+        margin: 0;
+        color: #0b2a66;
+      }
+      .gantt-meta {
+        color: #556;
+        font-size: 13px;
+        margin-top: 4px;
+      }
+      .gantt-image-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+      }
+      .gantt-image {
+        max-width: 100%;
+        height: auto;
+        border: 1px solid #eef3f8;
+        border-radius: 6px;
+        display: block;
+      }
+      .caption {
+        font-size: 13px;
+        color: #5a6b7a;
+        margin-top: 10px;
+        text-align: center;
+      }
+      .description {
+        margin-top: 18px;
+        color: #222;
+        font-size: 15px;
+        line-height: 1.5;
+      }
+      .note {
+        margin-top: 12px;
+        font-size: 13px;
+        color: #444;
+        background: #fbfbff;
+        padding: 10px;
+        border-left: 4px solid #e6e9f2;
+        border-radius: 4px;
+      }
+      @media (max-width: 720px) {
+        .gantt-page {
+          margin: 16px;
+          padding: 16px;
+        }
+        .gantt-title {
+          font-size: 18px;
+        }
+      }
+    </style>
+  </head>
+  <body class="is-preload">
+    <!-- Header -->
+    <header id="header">
+      <a href="index.html" class="title">System Szkoleniowy AI by A42</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Strona główna</a></li>
+          <li><a href="background.html">Tło biznesowe</a></li>
+          <li><a href="stakeholders.html" class="active">Interesariusze</a></li>
+          <li><a href="outline.html">Zarys projektu</a></li>
+          <li><a href="tasks.html">Zadania projektu i WBS</a></li>
+          <li><a href="gantt.html">Wykres Gantt WBS</a></li>
+          <li><a href="goals.html">Cele strategiczne</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <section id="main" class="wrapper">
+        <p style="text-align: center; font-size: 66px">Przebudowa</p>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="wrapper alt">
+      <div class="inner">
+        <ul class="menu">
+          <li>&copy; System Szkoleniowy AI — Wszystkie prawa zastrzeżone</li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

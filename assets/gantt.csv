@@ -1,0 +1,25 @@
+Outline Level,ID,Name,Start,Finish,Duration,% Complete,Predecessors,Resource Names,Color,Notes
+1,1,Governance & Compliance,2025-01-01,2025-02-01,32 day,0,,Project Manager,101,<p><br></p>
+2,2,Ustanowienie łańcucha odpowiedzialności (RACI),2025-01-01,2025-01-07,7 day,0,1FS,Project Manager,121,<p><br></p>
+2,3,Plan jakości i zgodności (ISO / RODO),2025-01-08,2025-01-21,14 day,0,1FS,Quality Lead,131,<p><br></p>
+2,4,Zarządzanie ryzykiem,2025-01-22,2025-02-01,11 day,0,1FS,Risk Manager,141,<p><br></p>
+1,5,Content & AI,2025-02-01,2025-03-15,43 day,0,,ML Engineer,201,<p><br></p>
+2,6,Analiza SOP i przygotowanie korpusu wiedzy,2025-02-01,2025-02-21,21 day,0,5FS,Process SME,221,<p><br></p>
+2,7,PoC AI Content Engine,2025-02-22,2025-03-07,14 day,0,5FS,ML Engineer,231,<p><br></p>
+2,8,Walidacja treści i reguły jakości,2025-03-08,2025-03-15,8 day,0,5FS,Metodyk,241,<p><br></p>
+1,9,Platforma & Integracje,2025-03-15,2025-04-15,32 day,0,,IT Architect,301,<p><br></p>
+2,10,Wybór i konfiguracja LMS,2025-03-15,2025-03-29,15 day,0,9FS,IT Architect,321,<p><br></p>
+2,11,Integracja HR (SCIM) i SSO,2025-03-30,2025-04-07,9 day,0,9FS,DevOps,331,<p><br></p>
+2,12,Magazyn plików i backup,2025-04-08,2025-04-15,8 day,0,9FS,DevOps,341,<p><br></p>
+1,13,Pilotaż & Rollout,2025-04-15,2025-06-01,47 day,0,,PM,401,<p><br></p>
+2,14,Plan pilotażu,2025-04-15,2025-04-22,8 day,0,13FS,PM,421,<p><br></p>
+2,15,Testy użyteczności i adopcji,2025-04-23,2025-05-23,31 day,0,13FS,UX/Research,431,<p><br></p>
+2,16,Rollout etapowy,2025-05-24,2025-06-01,9 day,0,13FS,Regional Leads,441,<p><br></p>
+1,17,Analytics & Continuous Improvement,2025-06-01,2025-07-15,45 day,0,,Quality Lead,501,<p><br></p>
+2,18,Dashboard KPI,2025-06-01,2025-06-15,15 day,0,17FS,Data Analyst,521,<p><br></p>
+2,19,Mechanizmy odświeżania treści,2025-06-16,2025-06-23,8 day,0,17FS,Dev,531,<p><br></p>
+2,20,Iteracje jakościowe (PDCA),2025-06-24,2025-07-15,22 day,0,17FS,Quality Lead,541,<p><br></p>
+1,21,Change Management & Training,2025-07-15,2025-08-15,31 day,0,,Learning Lead,601,<p><br></p>
+2,22,Program onboardingu trenerów,2025-07-15,2025-07-29,15 day,0,21FS,Learning Lead,611,<p><br></p>
+2,23,Komunikacja wewnętrzna,2025-07-30,2025-08-06,8 day,0,21FS,Comm Lead,621,<p><br></p>
+2,24,Metryki adopcji i wsparcie,2025-08-07,2025-08-15,9 day,0,21FS,Support,631,<p><br></p>
